@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #0c1524;
+}
+p,
+h1,
+h2,
+h3,
+a,
+article {
+  color: #fff;
+}
+/*header*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Raleway", sans-serif;
+  z-index: 100;
+}
+.header ul {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header ul li {
+  padding: 30px 10px;
+  align-self: center;
+  font-weight: 400;
+  position: relative;
+  right: 20px;
+}
+.header ul img {
+  max-width: 100px;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+.header ul li a:hover {
+  opacity: 0.8;
+}
+
+/*welcome*/
+.bg.mobile {
+  display: none;
+}
+.welcome {
+  box-sizing: border-box;
+  position: relative;
+  top: 150px;
+  width: 100%;
+  height: auto;
+}
+.welcome img:nth-child(1) {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  max-width: 500px;
+}
+.welcome img:nth-child(2) {
+  position: absolute;
+  z-index: -2;
+  margin-bottom: -450px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  min-height: 100vh;
+  transform: translate(-50%, -10%);
+}
+.welcome p:nth-child(3) {
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  font-size: 35px;
+  position: relative;
+  text-align: center;
+  width: 600px;
+  font-weight: 1000;
+  line-height: 3rem;
+}
+.welcome p:nth-child(4) {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+.welcome button {
+  border: 2px solid #8cdae4;
+  padding: 20px 100px;
+  border-radius: 50px;
+  background-color: #8cdae4;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  outline: none;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.welcome button:hover {
+  opacity: 0.7;
+}
+
+/*info boxes*/
+.info-boxes {
+  width: 100%;
+  background-color: #181f2b;
+  height: fit-content;
+  position: relative;
+  margin-top: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.info-boxes div {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.info-boxes div p {
+  max-width: 300px;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+}
+.info-boxes div h1 {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  flex-basis: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.info-boxes div img {
+  margin: 0 auto;
+}
+
+/*stay productive*/
+
+.fylo-works-intro {
+  position: relative;
+  width: 100%;
+  background-color: #181f2b;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 100px;
+}
+.fylo-works-intro a {
+  color: #3aa6d5;
+  position: relative;
+  top: 10px;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 2px solid #3aa6d5;
+  padding-bottom: 10px;
+}
+.fylo-works-intro a:hover {
+  opacity: 0.8;
+}
+
+.fylo-works-intro img {
+  max-width: 600px;
+  flex-basis: 500px;
+  position: relative;
+  left: -50px;
+}
+.fylo-works-intro .text {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  flex-basis: 500px;
+}
+.fylo-works-intro .text h1 {
+  font-family: "Raleway", sans-serif;
+  line-height: 2.5rem;
+}
+.fylo-works-intro .text p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 10px;
+}
+/*fylo-works*/
+
+.fylo-works {
+  width: 100%;
+  position: relative;
+  background-color: #181f2b;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 200px;
+}
+.fylo-works .person-box {
+  margin: 5px;
+  padding: 40px;
+  z-index: 9;
+  width: 400px;
+  height: 150px;
+  flex-basis: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #21293c;
+
+  box-shadow: 2px 2px 2px 2px #0c1524;
+  border-radius: 5px;
+}
+.fylo-works div article {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.fylo-works .person {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: -20px;
+}
+.fylo-works .person img {
+  border-radius: 50%;
+  max-width: 50px;
+}
+.fylo-works .person .person-info {
+  width: 400px;
+  flex-basis: 200px;
+  position: relative;
+  padding: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+/*early-access*/
+.early-access {
+  max-width: 80%;
+  height: 250px;
+  padding-bottom: 50px;
+  background-color: #1c2230;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #0c1524;
+  transform: translateY(-50%);
+}
+.early-access h1 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+.early-access p {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.early-access .inpt {
+  max-width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.early-access .inpt input {
+  width: 60%;
+  padding: 15px 85px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid cyan;
+  position: relative;
+  margin: 20px 0px;
+  text-align: center;
+}
+.early-access .inpt a {
+  width: 30%;
+  border: 1px solid #8cdae4;
+  background-color: #8cdae4;
+  color: #fff;
+  text-align: center;
+  font-weight: 1000;
+  padding: 15px 15px;
+  border-radius: 50px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+.early-access .inpt a:hover {
+  opacity: 0.7;
+}
+.early-access .inpt input:focus {
+  border: 2px solid #8cdae4;
+}
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#logo-footer {
+  max-width: 100px;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+footer .location {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer p {
+  max-width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: -5px 20px;
+  line-height: 1.7rem;
+}
+footer .contact {
+  margin: 0 20px;
+  display: block;
+  width: 170px;
+}
+footer .contact h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+}
+footer ul {
+  margin: 0px 50px;
+  align-self: center;
+}
+footer ul li {
+  padding: 5px 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 763px) {
+  .bg-desktop {
+    display: none;
+  }
+  .header ul {
+    position: relative;
+    right: 0px;
+  }
+  /*info boxes*/
+  .info-boxes {
+    display: flex;
+  }
+  .info-boxes div {
+    flex-basis: 100%;
+  }
+  /*welcome*/
+.bg.mobile{
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  max-width: 500px;
+}
+
+  .info-boxes div img {
+    margin: 0 auto;
+  }
+  .fylo-works .person-box {
+    flex-basis: 80%;
+  }
+
+  .welcome img:nth-child(1) {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .welcome p:nth-child(3) {
+    width: 100%;
+  }
+  .welcome p:nth-child(4) {
+    width: 100%;
+  }
+  .welcome button {
+    font-size: 20px;
+  }
+
+  .fylo-works-intro img {
+    width: 100%;
+    flex-basis: 100%;
+    position: relative;
+    left: 0px;
+  }
+  .fylo-works-intro .text {
+    position: relative;
+    top: 80px;
+    left: 5px;
+    flex-basis: 100%;
+  }
+  #logo-footer {
+    display: none;
+  }
+
+  .early-access {
+    max-width: 90%;
+    height: 200px;
+  }
+  .early-access h1 {
+    font-size: 26px;
+  }
+  .early-access p {
+    font-size: 12px;
+    width: 100%;
+  }
+  .early-access .inpt {
+    max-width: 100%;
+    top: 20%;
+  }
+  .early-access .inpt input {
+    width: 40%;
+    padding: 15px 85px;
+    margin: 20px 0px 10px 0px;
+  }
+  .early-access .inpt a {
+    width: 60%;
+    font-size: 11px;
+    padding: 15px 0px;
+  }
+
+  /*fylo-works*/
+  .fylo-works {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .fylo-works .person-box {
+    margin: 10px;
+    width: 50%;
+    padding: 50px;
+    height: 150px;
+    flex-basis: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #21293c;
+    box-shadow: 2px 2px 2px 2px #0c1524;
+    border-radius: 5px;
+  }
+  .fylo-works div article {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .fylo-works .person {
+    display: flex;
+    width: 300px;
+    margin-top: 30px;
+  }
+  .fylo-works .person img {
+    border-radius: 50%;
+    max-width: 50px;
+  }
+  .fylo-works .person .person-info {
+    width: 10px;
+    flex-basis: 50%;
+  }
+}
